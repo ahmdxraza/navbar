@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Navbar Designs</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+
+        /* =====================================
+           NAVBAR 1
+           ===================================== */
+
+        .navbar1-area {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9f9;
+        }
+
+        .navbar1 {
+            width: 365px;
+            height: 38px;
+            background-color: #111;
+            border: 4px solid #222;
+            border-radius: 25px;
+
+            display: flex;
+            align-items: center;
+            padding: 2px;
+            box-shadow: 0px 8px 12px #aaa;
+        }
+
+        .logo1 {
+            width: 28px;
+            height: 28px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 12px;
+        }
+
+        .navbar1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 10px;
+            margin-right: 17px;
+        }
+
+        .email1 {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 8px 13px;
+            font-size: 9px;
+            margin-left: auto;
+        }
+
+
+        /* =====================================
+           NAVBAR 2
+           ===================================== */
+
+        .navbar2-area {
+            min-height: 600px;
+            padding: 80px 10%;
+            background: linear-gradient(120deg, #3264b9, #101b55, #372069);
+        }
+
+        .title2 {
+            color: white;
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 130px;
+        }
+
+        .title2 span {
+            color: #42c4f2;
+        }
+
+        .navbar2 {
+            width: 100%;
+            max-width: 960px;
+            height: 85px;
+            margin: auto;
+
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 20px;
+
+            background-color: rgba(255,255,255,0.15);
+
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo2 {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .circle2 {
+            width: 30px;
+            height: 30px;
+            background-color: #4bc1f0;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .links2 {
+            display: flex;
+            gap: 45px;
+            margin: auto;
+        }
+
+        .links2 a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .signup2 {
+            background: linear-gradient(90deg, #30bce8, #8c8af0);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 13px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .mobile-nav2 {
+            width: 420px;
+            height: 75px;
+            margin: 55px auto 0;
+
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 18px;
+            background-color: rgba(255,255,255,0.15);
+
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .menu-icon {
+            color: white;
+            font-size: 38px;
+            margin-left: auto;
+            line-height: 25px;
+        }
+
+
+        /* =====================================
+           NAVBAR 3
+           ===================================== */
+
+        .navbar3-area {
+            height: 350px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+
+        .navbar3 {
+            width: 100%;
+            height: 65px;
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #eee;
+
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+        }
+
+        .brand3 {
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .cube3 {
+            width: 17px;
+            height: 17px;
+            border: 3px solid #222;
+            margin-right: 7px;
+            transform: rotate(30deg);
+        }
+
+        .links3 {
+            display: flex;
+            gap: 35px;
+            margin: auto;
+        }
+
+        .links3 a {
+            color: #111;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .login3 {
+            color: #111;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 25px;
+        }
+
+        .signup3 {
+            background-color: #111;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+
+        /* =====================================
+           RESPONSIVE
+           ===================================== */
+
+        @media (max-width: 700px) {
+
+            .navbar2-area {
+                padding: 40px 15px;
+            }
+
+            .title2 {
+                font-size: 28px;
+                margin-bottom: 50px;
+            }
+
+            .navbar2 {
+                width: 90%;
+            }
+
+            .links2,
+            .signup2 {
+                display: none;
+            }
+
+            .mobile-nav2 {
+                width: 90%;
+            }
+
+            .navbar3 {
+                padding: 0 12px;
+            }
+
+            .links3 {
+                display: none;
+            }
+
+            .login3 {
+                margin-left: auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!-- ==========================================
+     NAVBAR 1
+     ========================================== -->
+
+<div class="navbar1-area">
+
+    <nav class="navbar1">
+
+        <div class="logo1">
+            ◉
+        </div>
+
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Playground</a>
+        <a href="#">Resource</a>
+
+        <div class="email1">
+            ihyaet@gmail.com
+        </div>
+
+    </nav>
+
+</div>
+
+
+<!-- ==========================================
+     NAVBAR 2
+     ========================================== -->
+
+<div class="navbar2-area">
+
+    <h1 class="title2">
+        <span>20</span> CSS Responsive Navbar Designs
+    </h1>
+
+
+    <nav class="navbar2">
+
+        <div class="logo2">
+            <div class="circle2"></div>
+            Flow
+        </div>
+
+        <div class="links2">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Docs</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <a href="#" class="signup2">
+            Sign up
+        </a>
+
+    </nav>
+
+
+    <!-- Mobile version -->
+
+    <div class="mobile-nav2">
+
+        <div class="logo2">
+            <div class="circle2"></div>
+            Flow
+        </div>
+
+        <div class="menu-icon">
+            ☰
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+     NAVBAR 3
+     ========================================== -->
+
+<div class="navbar3-area">
+
+    <nav class="navbar3">
+
+        <div class="brand3">
+            <div class="cube3"></div>
+            Shadcnblocks.com
+        </div>
+
+
+        <div class="links3">
+
+            <a href="#">
+                Products⌄
+            </a>
+
+            <a href="#">
+                Company⌄
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </div>
+
+
+        <a href="#" class="login3">
+            Log in
+        </a>
+
+        <a href="#" class="signup3">
+            Sign up
+        </a>
+
+    </nav>
+
+</div>
+
+
+</body>
+</html>
